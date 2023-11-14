@@ -1,0 +1,34 @@
+<h1 class="IntroHeader">Hello There!</h1>
+<div class="container">
+    <div class="left-div">
+        <div>
+            <p> About Me</p>
+        </div>
+        <div class="AboutDiv">
+            <p>{{Para0}}</p>
+            <p>{{Para1}}</p>
+            <p>{{Para2}}</p>
+            <p>{{Para3}}</p>
+            <P>{{Para4}}</P>
+            <p>{{Para5}}</p>
+        </div>
+        <div>
+            <p> Contact me @</p>
+            <div class="ContactDiv">
+                <a href="mailto:rahulraghuk@gmail.com" target="_blank"><img src="../../assets/Images/envelope.svg"></a>
+                <a href="https://www.instagram.com/_the_crookedman_/" target="_blank"><img src="../../assets/Images/instagram.svg"></a>
+                <a href="https://maps.app.goo.gl/L23KqJm91h8oxCjKA" target="_blank"><img src="../../assets/Images/marker.svg"></a>
+            </div>
+        </div>
+    </div>
+    <div class="right-div">
+        <div>
+            <p>Skills ({{skillcount}})</p>
+            <div class="skillDiv">
+                <ul>
+                    <li *ngFor="let item of skillSet">{{ item }}</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+  </div>

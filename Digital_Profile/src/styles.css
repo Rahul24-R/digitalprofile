@@ -1,0 +1,33 @@
+body{
+	background: #ffea92;
+	margin:0;
+	font-family:"Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+	color:#fff;
+	overflow-x: hidden;
+}
+
+/* Style the vertical scrollbar */
+::-webkit-scrollbar {
+	width: 9px; /* Adjust the width as needed */
+	border-radius: 10px; /* Rounded corners */
+	background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+	padding-right: 2px;
+  }
+  
+  /* Style the scrollbar track */
+  ::-webkit-scrollbar-track {
+	background: transparent; /* Make the track transparent */
+  }
+  
+  /* Style the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+	background: rgba(47, 46, 46, 0.342); /* Thumb color with opacity */
+	border-radius: 10px; /* Rounded corners for the thumb */
+  }
+  
+  /* Style the scrollbar when hovered */
+  ::-webkit-scrollbar-thumb:hover {
+	background: rgba(41, 41, 41, 0.795); /* Change opacity on hover */
+  }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

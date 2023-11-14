@@ -1,0 +1,61 @@
+.WorkexpHeader{
+    color: rgba(45, 46, 46, 0.827);
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 280px; ;
+}
+
+.Container{
+    background-color: #3c3b3b6c; /* Example background color for left div */
+    border: #3c3b3b6c;
+    margin-left: 30px;
+    border-radius: 20px;
+    height: 1000px;
+    position: relative;
+}
+.companyName{
+    color: rgba(0, 0, 0, 0.782);
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 25px;
+    list-style:disc outside none;
+    text-decoration: underline  dotted rgba(0, 0, 0, 0.605);
+    margin-bottom: 10px;
+    
+}
+.companyName:hover{
+    opacity: 70%;
+}
+.role{
+    text-align: left;
+    color: rgba(42, 41, 41, 0.879);
+    font-weight: 200;
+    font-size:medium;
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-bottom: 1px;
+}
+.years{
+
+    text-align: left;
+    color: rgba(42, 41, 41, 0.879);
+    font-weight: 200;
+    font-size:medium;
+    margin-top: 0px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}
+.WorkSpan{
+    text-align: left;
+    color: rgba(42, 41, 41, 0.879);
+    font-weight: 200;
+    font-size:medium;
+    margin-top: 0px;
+    margin-left: 35px;
+}
+
+li{
+    text-align: left;
+    margin-left: 40px;
+    font-size: 20px;
+}

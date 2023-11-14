@@ -1,0 +1,30 @@
+<div class="RoutedComponent">
+    <h1 class="ReviewexpHeader">Reviews</h1>
+    <div class="container">
+        <div class="Formcontainer">
+            <h1> Please provide your feedback</h1>
+            <form #login="ngForm" (ngSubmit)="submit(login)">
+                <div class="contentgrp form-group">
+                    <label for="Name" class="labels">Name</label>
+                    <input #name="ngModel" required minlength="2" type="text" name="Name" class="inputs form-control" ngModel>
+                </div>
+                <pre></pre> <!-- create a space -->
+                <div class="contentgrp form-group">
+                    <label for="Email" class="labels">Email</label>
+                    <input type="text" name="Email" class="inputs form-control" ngModel>
+                </div>
+                <pre></pre>
+                <div class="contentgrp form-group">
+                    <label for="comment" class="labels">Comment</label>
+                    <textarea #comment="ngModel" required type="text" name="comment" minlength="2" class="comment textare form-control" ngModel></textarea>
+                </div>
+                <pre></pre>
+                <button type="submit" class="btn btn-primary" [disabled]="!name.valid || !comment.valid ">submit</button>
+                <pre></pre>
+            </form>
+        </div>
+        <div class="left-div">
+            <app-comments *ngFor="let comment of commentData" [commentobj]="comment"></app-comments>
+        </div>
+    </div>
+</div>

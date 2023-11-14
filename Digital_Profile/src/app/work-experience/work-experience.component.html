@@ -1,0 +1,12 @@
+<div class="RoutedComponent">
+    <h1 class="WorkexpHeader">Work Experience</h1>
+    <div class="Container">
+        <div *ngFor="let item of WorkExperienceResponse">
+            <p class="companyName">{{item.companyName}}</p>
+            <p class="role">{{item.role}}</p>
+            <p class="years">Years - {{item.years}}</p>
+            <p class="WorkSpan"> From :{{item.startingDate}}  To :{{item.endingDate}}</p>
+            <li *ngFor="let description of item.details" > {{description}}</li>
+        </div>
+    </div>
+</div>
